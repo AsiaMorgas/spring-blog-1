@@ -12,6 +12,7 @@ public class Application {
         try (var container = new AnnotationConfigApplicationContext(BlogConfiguration.class)) {
             var articleService = container.getBean(ArticleService.class);
             // TODO
+
             var article = Article.builder().id("jsdfgh")
                     .date(new Date())
                     .category("Kategoria")
